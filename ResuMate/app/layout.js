@@ -5,7 +5,7 @@ import ReduxProvider from '@/store/ReduxProvider';
 import {GoogleAnalytics} from '@next/third-parties/google'
 
 export const metadata = {
-    metadataBase: 'http://ProPrep.vercel.app',
+    metadataBase: 'https://resu-mate-final.vercel.app/',
     title: 'Free Resume Maker | ResuMate',
     description:
         'Our tool helps you create a resume that works with job application systems. It makes sure you look good to employers.',
