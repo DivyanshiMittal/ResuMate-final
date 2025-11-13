@@ -5,8 +5,7 @@ const loadState = () => {
     console.info('Loading State from Local Storage...');
 
     try {
-        const serializedState = localStorage.getItem('reduxState');
-        if (serializedState === null) return undefined;
+        const serializedState = typeof window !== "undefined" ? localStorage.getItem('reduxState') : null;        if (serializedState === null) return undefined;
         console.info('State Loaded Successfully from Local Storage');
         return JSON.parse(serializedState);
     } catch (err) {
